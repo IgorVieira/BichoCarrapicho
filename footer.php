@@ -2,7 +2,7 @@
      wp_footer();
    
 ?>
-
+ </div>
 <!--<footer class="footer-component">
 	<a href="" class="topo"><i class="fa fa-arrow-up"></i></a>
 	<ul class="footer-item">

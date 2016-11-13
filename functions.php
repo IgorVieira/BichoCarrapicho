@@ -25,3 +25,17 @@ add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
+
+
+function remove_dashboard_widgets(){
+  register_sidebar(array(
+	  'name' => 'Nome',
+	  'id' => 'nome_up_new_widget_area',
+	  'before_widget' => '<aside>',
+	  'after_widget' => '</aside>',
+	  'before_title' => '<h3 class="widget-title">',
+	  'after_title' => '</h3>',
+
+  ));
+}
+add_action('widgets_init', 'remove_dashboard_widgets');

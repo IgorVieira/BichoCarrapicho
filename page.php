@@ -20,7 +20,13 @@ if($formularioEnviado) {
 }
 ?>
 
-
+<div class="flex-container">
+    <div class="flex-item"> 
+        <?php
+         woocommerce_content();
+        ?> 
+    </div>
+</div>
   
   <?php if( have_posts() ) {
                     while( have_posts() ) {
